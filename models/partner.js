@@ -6,6 +6,7 @@ const PartnerSchema = mongoose.Schema({
   phonenumber: { type: Number, rquired: true },
   governorat: { type: String, rquired: true },
   adresse:{type: String, required:false},
+  password:{type: String, required:true},
   avatar:{type:String,},
 });
 module.exports = mongoose.model("partner", PartnerSchema);

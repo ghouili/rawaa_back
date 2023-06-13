@@ -123,7 +123,7 @@ const Delete = async (req, res) => {
   if (!existUser) {
     return res
       .status(200)
-      .json({ success: false, messgae: "user doesnt exist!!", error: false });
+      .json({ success: false, message: "user doesnt exist!!", error: false });
   }
 
   try {
@@ -189,7 +189,7 @@ const Update = async (req, res) => {
   if (!existUser) {
     return res
       .status(200)
-      .json({ success: false, messgae: "user doesnt exist!!", error: false });
+      .json({ success: false, message: "user doesnt exist!!", error: false });
   }
 
   existUser.firstname = firstname;
@@ -238,7 +238,7 @@ const Login = async (req, res) => {
   if (!existUser) {
     return res
       .status(200)
-      .json({ success: false, messgae: "user doesnt exist!!", error: false });
+      .json({ success: false, message: "user doesnt exist!!", error: false });
   }
 
   //compare password:
@@ -247,7 +247,7 @@ const Login = async (req, res) => {
   if (!check) {
     return res
       .status(200)
-      .json({ success: false, messgae: "Check your password!!", error: false });
+      .json({ success: false, message: "Check your password!!", error: false });
   }
 
   return res

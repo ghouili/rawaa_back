@@ -7,6 +7,7 @@ const path = require('path');
 const UserRoute = require("./routes/user");
 const PartnerRoute = require("./routes/partner");
 const CompanyRoute = require("./routes/company");
+const AchatRoute = require("./routes/achat");
 
 const PORT = 5000;
 
@@ -25,6 +26,7 @@ server.get("/index", (req, res) => {
 server.use("/user", UserRoute);
 server.use("/partner", PartnerRoute);
 server.use("/company", CompanyRoute);
+server.use("/achat", AchatRoute);
 
 mongoose
   .connect(

@@ -28,7 +28,7 @@ const Ajout = async (req, res) => {
       .status(200)
       .json({
         success: false,
-        messgae: "company Already exist!!",
+        message: "company Already exist!!",
         error: false,
       });
   }
@@ -82,7 +82,7 @@ const Delete = async (req, res) => {
       .status(200)
       .json({
         success: false,
-        messgae: "company doesnt exist!!",
+        message: "company doesnt exist!!",
         error: false,
       });
   }
